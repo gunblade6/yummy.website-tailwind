@@ -17,3 +17,50 @@ nav ul a {
 .button {
   @apply rounded-full bg-red-600 text-white px-4 py-2 cursor-pointer transition-all hover:bg-red-500;
 }
+
+.gello {
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+span.gello {
+  display: inline-block;
+}
+
+@keyframes gello {
+  0% {
+    transform: scale3d(1, 1, 1);
+    color: black;
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+    color: #dc2626; /* Change to Tailwind's red-600 */
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+    color: #dc2626;
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+    color: black;
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+    color: black;
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+    color: #dc2626;
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+    color: black;
+  }
+}
