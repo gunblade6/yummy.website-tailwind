@@ -6,11 +6,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "make-css": "tailwindcss-cli -i src/style.css -o public/style.css"
+    "build-css": "tailwindcss -i src/input.css -o public/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {},
-  "description": ""
+  "description": "###Author [Mohamed Ashraf](mohamed-dev.netlify.app) ###live-preview [watch-live](yummywebsite.netlify.app)"
 }
