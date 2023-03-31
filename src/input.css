@@ -5,3 +5,15 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+.nav-active {
+  @apply text-black border-b-2 border-red-600;
+}
+
+nav ul a {
+  @apply font-extrabold text-gray-500 text-sm py-2 hover:text-black transition-all;
+}
+
+.button {
+  @apply rounded-full bg-red-600 text-white px-4 py-2 cursor-pointer transition-all hover:bg-red-500;
+}
