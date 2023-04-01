@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- wrapper -->
-    <div class="bg-gray-100 max-h-screen overflow-hidden">
+    <div class="bg-gray-100 min-h-screen overflow-hidden">
       <header
         class="bg-white w-full px-5 md:px-20 shadow-slate-600 font-notosans"
       >
@@ -20,7 +20,7 @@
           >
             Yummy<span class="text-red-600 text-2xl">.</span>
           </a>
-          <ul class="flex gap-6 items-center">
+          <ul class="flex gap-6 items-center max-lg:hidden">
             <li><a href="#" class="nav-active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Menu</a></li>
@@ -53,11 +53,13 @@
         </nav>
       </header>
       <main class="container mx-auto px-5 md:px-20">
-        <section class="flex justify-between items-center py-20">
+        <section
+          class="flex justify-between items-center py-20 max-lg:flex-col max-lg:text-center max-lg:gap-16"
+        >
           <div>
             <h1
               id="mainHeading"
-              class="cursor-default font-delecious text-8xl uppercase leading-snug mb-2"
+              class="cursor-default font-delecious text-8xl uppercase leading-snug mb-2 max-lg:text-6xl"
             >
               Enjoy your healthy<br />delicous food
             </h1>
@@ -66,7 +68,7 @@
               soluta ut magni ratione facere, quibusdam iste sunt non blanditiis
               dolorum odit maiores dignissimos.
             </p>
-            <div class="flex items-center">
+            <div class="flex items-center max-lg:justify-center">
               <a href="/" class="mr-5 button !px-8">Book a Table</a>
               <a
                 href="#"
