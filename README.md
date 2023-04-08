@@ -2,8 +2,8 @@
 
 ## Author
 
-[Mohamed Ashraf](mohamed-dev.netlify.app)
+[Mohamed Ashraf](https://mohamed-dev.netlify.app)
 
 ### live-preview
 
-[watch-live](yummywebsite.netlify.app)
+[watch-live](https://yummywebsite.netlify.app)
