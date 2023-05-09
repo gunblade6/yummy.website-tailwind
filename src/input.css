@@ -13,9 +13,55 @@
 nav ul a {
   @apply font-extrabold text-gray-500 text-sm py-2 hover:text-black transition-all;
 }
-
 .button {
   @apply rounded-full bg-red-600 text-white px-4 py-2 cursor-pointer transition-all hover:bg-red-500;
+}
+section {
+  @apply px-5 md:px-20;
+}
+
+h2 {
+  @apply text-8xl mb-10 font-delecious relative w-fit max-lg:mx-auto;
+}
+.aboutImage {
+  box-shadow: 0 0 0 10px rgb(243 244 246 / var(--tw-bg-opacity)),
+    0 0 0 15px #dc2626;
+}
+#menu .cards {
+  @apply grid gap-6;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+#menu .card {
+  @apply bg-white overflow-hidden rounded-md;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+#menu .card img {
+  @apply object-cover w-full;
+}
+#menu .card .content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2::after {
+  content: "";
+  @apply absolute h-1 bg-red-600 bottom-0 left-0 max-md:left-1/2 max-md:-translate-x-1/2;
+  width: 100%;
+}
+#menu .card .content .text h3 {
+  @apply text-xl font-semibold;
+}
+#menu .card .content .text p {
+  color: #808080;
+  @apply w-fit cursor-pointer flex items-center gap-1;
+}
+#menu .card .content .text p svg {
+  @apply w-3 mt-1;
+}
+#menu .card .content button {
+  @apply bg-red-600 text-white px-4 py-1 rounded-md transition-all hover:bg-red-500;
 }
 
 .gello {
@@ -28,6 +74,10 @@ span.gello {
   display: inline-block;
 }
 
+form input,
+form textarea {
+  @apply p-4 focus:outline-none !rounded-md;
+}
 @keyframes gello {
   0% {
     transform: scale3d(1, 1, 1);
